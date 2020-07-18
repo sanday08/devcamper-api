@@ -1,0 +1,63 @@
+Error: Bootcamp validation failed: address: Address field must be required, description: Please add a description, name: Please add a name
+    at ValidationError.inspect (E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (internal/util/inspect.js:693:31)
+    at inspect (internal/util/inspect.js:264:10)
+    at formatWithOptions (internal/util/inspect.js:1865:40)
+    at Object.Console.<computed> (internal/console/constructor.js:281:10)
+    at Object.log (internal/console/constructor.js:291:61)
+    at errorHandler (E:\Practice\Node\Final\devcamper_api\middleware\error.js:4:11)
+    at Layer.handle_error (E:\Practice\Node\Final\devcamper_api\node_modules\express\lib\router\layer.js:71:5)
+    at trim_prefix (E:\Practice\Node\Final\devcamper_api\node_modules\express\lib\router\index.js:315:13)
+    at E:\Practice\Node\Final\devcamper_api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Practice\Node\Final\devcamper_api\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Practice\Node\Final\devcamper_api\node_modules\express\lib\router\index.js:275:10)
+    at E:\Practice\Node\Final\devcamper_api\node_modules\express\lib\router\index.js:635:15
+    at next (E:\Practice\Node\Final\devcamper_api\node_modules\express\lib\router\index.js:260:14)
+    at next (E:\Practice\Node\Final\devcamper_api\node_modules\express\lib\router\route.js:127:14)
+    at exports.createBootcamp (E:\Practice\Node\Final\devcamper_api\controllers\bootcamps.js:42:5) {
+  errors: {
+    address: ValidatorError: Address field must be required
+        at validate (E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\schematype.js:1210:13)
+        at E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\schematype.js:1193:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\schematype.js:1138:14)
+        at E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\document.js:2388:18
+        at processTicksAndRejections (internal/process/task_queues.js:79:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'address',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    description: ValidatorError: Please add a description
+        at validate (E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\schematype.js:1210:13)
+        at E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\schematype.js:1193:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\schematype.js:1138:14)
+        at E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\document.js:2388:18
+        at processTicksAndRejections (internal/process/task_queues.js:79:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'description',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    name: ValidatorError: Please add a name
+        at validate (E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\schematype.js:1210:13)
+        at E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\schematype.js:1193:7
+        at Array.forEach (<anonymous>)
+        at SchemaString.SchemaType.doValidate (E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\schematype.js:1138:14)
+        at E:\Practice\Node\Final\devcamper_api\node_modules\mongoose\lib\document.js:2388:18
+        at processTicksAndRejections (internal/process/task_queues.js:79:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'name',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Bootcamp validation failed'
+}
