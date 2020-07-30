@@ -12,6 +12,8 @@ const xss = require("xss-clean");
 const rateLimit = require("express-rate-limit");
 const hpp = require("hpp");
 
+//file upload middleware allways add first
+app.use(fileUpload());
 //Load env vars
 dotenv.config({ path: "./config/config.env" });
 
@@ -53,8 +55,7 @@ app.use(cors());
 
 //Set Static folder
 app.use(express.static(path.join(__dirname, "public")));
-//file upload middleware
-app.use(fileUpload());
+
 
 //Dev logging middleware
 if (process.env.NODE_ENV === "development") {
