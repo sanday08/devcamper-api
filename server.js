@@ -12,8 +12,7 @@ const xss = require("xss-clean");
 const rateLimit = require("express-rate-limit");
 const hpp = require("hpp");
 
-//file upload middleware allways add first
-app.use(fileUpload());
+
 //Load env vars
 dotenv.config({ path: "./config/config.env" });
 
@@ -27,6 +26,9 @@ const users = require("./routes/users");
 const reviews = require("./routes/reviews");
 const cors = require("cors");
 const app = express();
+
+//file upload middleware allways add first
+app.use(fileUpload());
 
 //Body parser
 app.use(express.json());
