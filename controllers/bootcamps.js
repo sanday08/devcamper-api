@@ -137,7 +137,7 @@ exports.bootcampPhotoUpload = asyncHandler(async (req, res, next) => {
       new ErrorResponse(`Bootcamp not found with id of ${req.params.id}`, 404)
     );
   if (!req.files) {
-    return next(ErrorResponse(`Please upload file..`), 404);
+    return next(new ErrorResponse(`Please upload file..`), 404);
   }
   const photo = req.files.photo;
   //Check user is bootcamp owner
